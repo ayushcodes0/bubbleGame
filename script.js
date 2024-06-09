@@ -40,7 +40,12 @@ function runTimer(){
         }
         else{
             clearInterval(timerInt);
-            document.querySelector("#pbtm").innerHTML = `<h1>Game Over<h1>`;
+            document.querySelector("#pbtm").innerHTML = `
+            <div class="finally" >
+                <h1>GAME OVER</h1>
+                <h1>SCORE</h1>
+                <h1 id="scoreh1" >${score}</h1>
+            </div>`;
         }
     },1000)
 }

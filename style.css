@@ -8,7 +8,9 @@
 :root{
     --primary-color: #2F3C7E;
     --secondary-color: #FBEAEB;
+    --tertiary-color: #4e5daa;
     --font-color: white;
+    --hover-color: #202959;
 }
 
 body , html{
@@ -17,7 +19,7 @@ body , html{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #4e5daa;
+    background-color: var(--tertiary-color);
 }
 
 #main{
@@ -56,8 +58,10 @@ body , html{
 }
 
 #pbtm{
+    height: 100%;
     padding: 20px;
     display: flex;
+    align-items: center;
     justify-content: center;
     flex-wrap: wrap;
     gap: 12px;
@@ -80,8 +84,19 @@ body , html{
 }
 
 .circle:hover{
-    background-color: #202959;
+    background-color: var(--hover-color); 
 }
+.finally{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.finally h1{
+    font-size: 35px;
+}
+
 
 @media (max-width:400px) {
     #main{
