@@ -2,11 +2,23 @@ var score = 0;
 var timer = 20;
 var hitrn;
 
+let n = 162;
+
+let height = window.screen.height;
+let width = window.screen.width;
+
+if(height>width){
+    n = 50;
+}
+
+console.log(height,width);
+
+
 function makeBubble(){
 
     var clutter = "";
     
-    for (let i = 1; i<=162; i++){
+    for (let i = 1; i<=n; i++){
         let rn = Math.floor(Math.random()*10);
         clutter += `
         <div id="circles" class="circle">${rn}
