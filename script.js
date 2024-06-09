@@ -71,5 +71,8 @@ document.querySelector("#pbtm").addEventListener("click",function (dets){
 })
 
 makeBubble();
-runTimer();
+document.querySelector("#play-btn").addEventListener("click",function(){
+    runTimer();
+})
+// runTimer();
 getHit();
