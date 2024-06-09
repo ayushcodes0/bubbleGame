@@ -8,7 +8,7 @@ let height = window.screen.height;
 let width = window.screen.width;
 
 if(height>width){
-    n = 45;
+    n = 4;
 }
 
 console.log(height,width);
