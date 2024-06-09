@@ -1,5 +1,8 @@
+
+let a = prompt("Enter Time in seconds");
+
 var score = 0;
-var timer = 20;
+var timer = a;
 var hitrn;
 
 let n = 162;
