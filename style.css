@@ -82,3 +82,21 @@ body , html{
 .circle:hover{
     background-color: #202959;
 }
+
+@media (max-width:400px) {
+    #main{
+        height: 90%;
+    }
+
+    .elem h3{
+        font-size: 12px;
+    }
+    .box{
+        font-size: 10px;
+    }
+    .circle{
+        padding: 8px 14px;
+    }
+
+    
+}
