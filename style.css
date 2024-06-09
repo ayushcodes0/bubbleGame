@@ -105,6 +105,31 @@ body , html{
 }
 
 
+.play{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.play button{
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    padding: 15px 18px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    font-size: 15px;
+    border: 1px solid var(--primary-color);
+    position: absolute;
+    bottom: 15px;
+}
+.play button:hover{
+    background-color: #eddee0;
+    font-size: 18px;
+    
+}
 @media (max-width:400px) {
     #main{
         height: 90%;
@@ -121,28 +146,4 @@ body , html{
     }
 
     
-}
-.play{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    bottom: 0;
-    left: 50vw;
-}
-
-.play button{
-    background-color: var(--secondary-color);
-    color: var(--primary-color);
-    padding: 15px 18px;
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    margin-bottom: 10px;
-    font-size: 15px;
-}
-.play button:hover{
-    background-color: #eddee0;
-    font-size: 18px;
-
 }

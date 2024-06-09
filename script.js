@@ -14,8 +14,6 @@ if(height>width){
     n = 40;
 }
 
-console.log(height,width);
-
 
 function makeBubble(){
 
@@ -61,18 +59,21 @@ function increaseScore(){
     document.querySelector("#score-cnt").textContent = score;
 }
 
-document.querySelector("#pbtm").addEventListener("click",function (dets){
-    var clickedNum = Number(dets.target.textContent);
-    if(clickedNum == hitrn){
-        increaseScore();
-        makeBubble();
-        getHit();
-    }
-})
+function play(){
+    document.querySelector("#pbtm").addEventListener("click",function (dets){
+        var clickedNum = Number(dets.target.textContent);
+        if(clickedNum == hitrn){
+            increaseScore();
+            makeBubble();
+            getHit();
+        }
+    })
+}
 
 makeBubble();
 document.querySelector("#play-btn").addEventListener("click",function(){
     runTimer();
+    play();
 })
 // runTimer();
 getHit();
