@@ -21,6 +21,9 @@ body , html{
     flex-direction: column;
     gap: 20px;
     
+
+
+    
 }
 .hero{
     width: 100%;
